@@ -4,7 +4,6 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat'],
-        'space-grotesk': ['Space Grotesk'],
       },
       fontSize: {
         xs: ['0.875rem', '2rem'], // 14px 32px
@@ -15,16 +14,10 @@ module.exports = {
       },
       weight: {
         normal: 400,
-        medium: 500,
-        bold: 700,
+
+        bold: 900,
       },
-      colors: {
-        gray: {
-          100: '#DCE2F2',
-          200: '#6075AA',
-          300: '#7A8297',
-        },
-      },
+      colors: {},
     },
   },
   plugins: [require('@tailwindcss/forms')],
