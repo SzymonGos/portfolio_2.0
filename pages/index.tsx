@@ -1,11 +1,7 @@
-import Hello from '@/components/Hello'
-
-export default function Example() {
+export default function Homepage() {
   return (
-    <div className='max-w-md mx-auto my-20'>
-      <main>
-        <Hello />
-      </main>
+    <div className=' max-w-3xl mx-auto my-20'>
+      <main></main>
     </div>
   )
 }
