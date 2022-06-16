@@ -4,27 +4,19 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat'],
-        'space-grotesk': ['Space Grotesk'],
+        'butler-stencil': ['Butler Stencil'],
       },
       fontSize: {
-        xs: ['0.875rem', '2rem'], // 14px 32px
-        sm: ['1rem', '2rem'], // 16px 32px
-        base: ['1.125rem', '2rem'], // 18px 32px
-        lg: ['1.5rem', '1.914rem'], // 24px 30.62px
-        xl: ['3rem', '3.828rem'], // 48px 61.25px
+        sm: ['0.937rem', '1.5rem'], // 15px 24px
+        base: ['1rem', '2rem'], // 16px 32px
+        lg: ['1.5rem', '2.25rem'], // 24px 36px
+        xl: ['4rem', '4.8rem'], // 64px 76.8px
       },
-      weight: {
+      fontWeight: {
         normal: 400,
-        medium: 500,
-        bold: 700,
+        bold: 900,
       },
-      colors: {
-        gray: {
-          100: '#DCE2F2',
-          200: '#6075AA',
-          300: '#7A8297',
-        },
-      },
+      colors: {},
     },
   },
   plugins: [require('@tailwindcss/forms')],
