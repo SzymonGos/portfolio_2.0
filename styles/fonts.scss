@@ -1,0 +1,26 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/montserrat/montserrat-v24-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../public/fonts/montserrat/montserrat-v24-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../public/fonts/montserrat/montserrat-v24-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../public/fonts/montserrat/montserrat-v24-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../public/fonts/montserrat/montserrat-v24-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../public/fonts/montserrat/montserrat-v24-latin-regular.svg#Montserrat")
+      format("svg"); /* Legacy iOS */
+}
+
+/* butler stencil - latin */
+@font-face {
+  font-family: "Butler Stencil";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/butlerStencil/ButlerStencil.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../public/fonts/butlerStencil/ButlerStencil.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../public/fonts/butlerStencil/ButlerStencil.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../public/fonts/butlerStencil/ButlerStencil.woff") format("woff"),
+    /* Modern Browsers */ url("../public/fonts/butlerStencil/ButlerStencil.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../public/fonts/butlerStencil/ButlerStencil.svg#ButlerStencil") format("svg"); /* Legacy iOS */
+}
