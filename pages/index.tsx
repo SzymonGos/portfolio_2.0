@@ -1,12 +1,12 @@
-import Container from '@/components/Container'
+import Masthead from '@/components/Masthead'
 
 export default function LandingPage() {
   return (
     <>
       <main>
-        <Container>
-          <div className='text-sm font-bold col-span-full'>Something great is coming :)</div>
-        </Container>
+        <header>
+          <Masthead />
+        </header>
       </main>
     </>
   )
