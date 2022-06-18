@@ -1,12 +1,13 @@
-export default function Homepage() {
+import Container from '@/components/Container'
+
+export default function LandingPage() {
   return (
-    <div className=' max-w-3xl mx-auto my-20'>
+    <>
       <main>
-        <div className='text-sm font-bold'>Something great is coming :)</div>
-        <div>Something great is coming :)</div>
-        <div className='text-lg'>Something great is coming :)</div>
-        <div className='text-xl'>Something great is coming :)</div>
+        <Container>
+          <div className='text-sm font-bold col-span-full'>Something great is coming :)</div>
+        </Container>
       </main>
-    </div>
+    </>
   )
 }
