@@ -7,14 +7,15 @@ module.exports = {
         'butler-stencil': ['Butler Stencil'],
       },
       fontSize: {
-        sm: ['0.937rem', '1.5rem'], // 15px 24px
-        base: ['1rem', '2rem'], // 16px 32px
-        lg: ['1.5rem', '2.25rem'], // 24px 36px
-        xl: ['4rem', '4.8rem'], // 64px 76.8px
+        base: ['1rem', '1.563rem'], // 16px 25px
+        lg: ['1.25rem', '1.5rem'], // 20px 24px
+        xl: ['1.5rem', '1.875rem'], // 24px 30px
+        '2xl': ['2rem', '2.812rem'], // 32px 45px
+        '3xl': ['3rem', '3.65rem'], // 48px 58.5px
       },
       fontWeight: {
         normal: 400,
-        bold: 900,
+        bold: 700,
       },
       colors: {},
     },
