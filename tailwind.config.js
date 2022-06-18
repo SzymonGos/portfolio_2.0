@@ -27,6 +27,23 @@ module.exports = {
           100: '#F4F6F8',
         },
       },
+      keyframes: {
+        fadeInSlideUp: {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(1rem)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0rem)',
+          },
+        },
+      },
+      animation: {
+        'fadeInSlideUp-1': 'fadeInSlideUp 0.3s linear forwards',
+        'fadeInSlideUp-2': 'fadeInSlideUp 0.3s  0.3s linear forwards',
+        'fadeInSlideUp-3': 'fadeInSlideUp 0.3s  0.6s linear forwards',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
