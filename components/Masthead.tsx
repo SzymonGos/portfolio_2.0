@@ -16,7 +16,7 @@ export default function Masthead() {
           <div className='col-start-1 col-span-full lg:col-start-2 md:col-span-full lg:col-span-5 mt-16 md:mt-28'>
             <div className='flex flex-col gap-y-6 opacity-0 animate-fadeInSlideUp-2'>
               <h1 className='text-2xl text-gray-300 font-bold'>Finding pleasure in making things.</h1>
-              <div className='text-gray-200'>Currently at AtomikLabs</div>
+              <div className='text-gray-200'>Currently at Atomik Labs</div>
             </div>
           </div>
 
