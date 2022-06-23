@@ -1,0 +1,15 @@
+@mixin break-xs {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+@mixin break-sm {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+@mixin break-lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
