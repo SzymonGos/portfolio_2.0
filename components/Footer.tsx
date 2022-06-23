@@ -10,10 +10,10 @@ export default function Footer() {
       <Container className='relative px-0 lg:px-0 w-full max-w-none mx-0'>
         <div className='absolute -z-10 lg:col-start-1 lg:col-span-9 left-0 w-full h-[110%] lg:h-[300px] bg-gray-100' />
         <Container className='col-span-full w-full'>
-          <ul className='col-span-full lg:col-start-2 lg:col-span-2 pt-11 flex flex-col gap-y-6 order-2 lg:order-1 font-bold'>
+          <ul className='col-span-full lg:col-start-2 lg:col-span-2 pt-11 flex flex-col gap-y-6 order-2 lg:order-1 font-bold w-fit'>
             {links.map((x, i) => {
               return (
-                <li key={i}>
+                <li key={i} className='link-hover w-fit'>
                   <a href={x.href} target='_blank'>
                     {x.name}
                   </a>

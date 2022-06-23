@@ -37,10 +37,10 @@
     &-prev {
       display: none;
       width: 2%;
-      height: calc(100% - #{$pagination-height});
+      height: calc(50% - #{$pagination-height}) !important;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 25%;
+      bottom: 0;
       z-index: 20;
       cursor: pointer;
       opacity: 0;
