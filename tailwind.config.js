@@ -26,6 +26,9 @@ module.exports = {
         blue: {
           100: '#F4F6F8',
         },
+        red: {
+          100: '#ff4500',
+        },
       },
       keyframes: {
         fadeInSlideUp: {

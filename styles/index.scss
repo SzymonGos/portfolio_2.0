@@ -3,3 +3,21 @@
 @tailwind utilities;
 @import "./fonts.scss";
 @import "./swiper.scss";
+
+.link-hover {
+  &::after {
+    position: relative;
+    z-index: -10;
+    bottom: 10px;
+    content: "";
+    display: block;
+    height: 10px;
+    background: #ff4500;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+}
