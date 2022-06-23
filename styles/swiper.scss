@@ -1,0 +1,94 @@
+@use "mixins";
+
+.swiper {
+  $pagination-height: 35px;
+  --swiper-pagination-bullet-inactive-color: #ddd;
+  --swiper-pagination-color: #9d9c9c;
+
+  .swiper-wrapper {
+    padding-bottom: 45px;
+    height: calc(100% - $pagination-height);
+  }
+
+  .swiper-pagination {
+    height: $pagination-height;
+
+    &-bullets {
+      bottom: 0 !important;
+    }
+
+    &-bullet {
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      transition: all 0.2s ease;
+
+      &-active {
+        width: 16px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .swiper-button {
+    $arrow-edge-distance: -10px;
+
+    &-next,
+    &-prev {
+      display: none;
+      width: 2%;
+      height: calc(100% - #{$pagination-height});
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("../public/assets/arrow.svg") no-repeat center;
+        transform: translateY(-50%) rotate(0deg);
+        position: absolute;
+        top: 50%;
+        left: $arrow-edge-distance;
+      }
+
+      &:hover {
+        opacity: 0.8 !important;
+      }
+
+      @include mixins.break-sm {
+        display: block;
+      }
+    }
+
+    &-next {
+      left: auto;
+      right: 0px;
+
+      &::after {
+        left: auto;
+        right: $arrow-edge-distance;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    &-disabled {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .swiper-button {
+      &-next,
+      &-prev {
+        opacity: 0.4;
+      }
+    }
+  }
+}
